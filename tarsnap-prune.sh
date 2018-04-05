@@ -34,11 +34,11 @@ if [ "$DEBUG" = "true" ]
 then
     TMPFILE=/tmp/tarsnap.archives
     if [ ! -f $TMPFILE ]; then
-        $TARSNAP --configfile /etc/tarsnap.conf --list-archives > $TMPFILE
+        $TARSNAP --list-archives > $TMPFILE
     fi
 else
     TMPFILE=/tmp/tarsnap.archives.$$
-    $TARSNAP --configfile /etc/tarsnap.conf --list-archives > $TMPFILE
+    $TARSNAP --list-archives > $TMPFILE
 fi
 
 DELARCHIVES=""
