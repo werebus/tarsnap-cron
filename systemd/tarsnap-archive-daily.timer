@@ -2,7 +2,7 @@
 Description=Run tarsnap-archive Daily
 
 [Timer]
-OnCalendar=*-*-* 01:01:00
+OnCalendar=Tue..Sun *-*-2..31 01:01:00
 Persistent=true
 Unit=tarsnap-archive-daily.service
 
